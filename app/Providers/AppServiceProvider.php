@@ -2,27 +2,14 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use ZhuiTech\BootLaravel\Providers\LaravelProvider;
+use ZhuiTech\BootLaravel\Providers\MicroServiceProvider;
+use ZhuiTech\BootLaravel\Providers\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
-    }
+    protected $providers = [
+        LaravelProvider::class,
+        MicroServiceProvider::class,
+    ];
 }
