@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零售业新店IT支持</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/service.css">
+    <style>
+        header .navbox .navli:nth-child(3) .navTl span {
+            color: #0095fe;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bannerbox">
+        <div class="pcbanner" style="background-image:url(images/ser_01.jpg)"></div>
+        <div class="mobanner" style="background-image:url(images/ser_01_m.jpg)"></div>
+        <div class="wrap">
+            <div class="title">服务业务</div>
+        </div>
+    </div>
+    <div class="ser_g outwrapper">
+        <div class="wrap clearfix">
+            <div class="lcontent">
+                <div class="top clearfix">
+                    <div class="there clearfix">
+                        <img src="images/home.png" alt="">
+                        <span>服务业务</span>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="div_1">
+                        <div class="divtl">零售业系统软件销售</div>
+                        <div class="bk">
+                            <div class="tl">概要</div>
+                            <div class="text nomb">提供POS，MD，CRM，货架管理等系列软件。同时支持第三方软件代采购业务</div>
+                        </div>
+                        <div class="bk">
+                            <div class="tl">软件产品</div>
+                            <div class="prolist clearfix">
+                                <!-- 这里如果需要是A标签的话直接替换成a标签 -->
+                                <div class="proli">
+                                    <img src="images/pro_01.png" alt="">
+                                </div>
+                                <div class="proli">
+                                    <img src="images/pro_02.png" alt="">
+                                </div>
+                                <div class="proli">
+                                    <img src="images/pro_03.png" alt="">
+                                </div>
+                                <div class="proli">
+                                    <img src="images/pro_04.png" alt="">
+                                </div>
+                                <div class="proli">
+                                    <img src="images/pro_05.png" alt="">
+                                </div>
+                            </div>
+                            <div class="infoimg">
+                                <div class="imgbox">
+                                    <img src="images/ser_20.png" alt="">
+                                </div>
+                                <div class="text">
+                                    通过提高设计及真实性的操作感，实现了高使用性能，减少了人工成本；该软件适用于专卖店，超市，百货店，服装店，饮食店等众多领域。目前在日本已经导入6万台以上的POS端末。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rtsidebar">
+                <div class="title">服务业务</div>
+                <a href="retail.html" class="md">零售业IT解决方案</a>
+                <a href="base.html" class="md">IT基础设施建设</a>
+                <a href="defend.html" class="md">业务系统运营、维护</a>
+                <a href="newretail.html" class="md actmd">零售业新店IT支持</a>
+                <a href="retailsale.html" class="md">零售业系统软件销售</a>
+                <a href="itsale.html" class="md">IT设备销售</a>
+                <div class="pageimg">
+                    <img src="images/ser_02.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $(function () {
+        $(".ser_d .div_1 .bk .table .left .td").click(function () {
+            var ind = $(this).index();
+            $(this).addClass("acttd").siblings().removeClass("acttd");
+            $(".ser_d .div_1 .bk .table .rt .indiv").eq(ind).show().siblings().hide();
+        })
+    })
+</script>
+
+</html>

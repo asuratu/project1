@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>解决方案展示</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/service.css">
+    <style>
+        header .navbox .navli:nth-child(5) .navTl span {
+            color: #0095fe;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bannerbox">
+        <div class="pcbanner" style="background-image:url(images/par_10.jpg)"></div>
+        <div class="mobanner" style="background-image:url(images/par_10_m.jpg)"></div>
+        <div class="wrap">
+            <div class="title">解决方案展示</div>
+        </div>
+    </div>
+    <div class="ser_f outwrapper">
+        <div class="wrap clearfix">
+            <div class="lcontent">
+                <div class="top clearfix">
+                    <div class="there clearfix">
+                        <img src="images/home.png" alt="">
+                        <span>解决方案展示</span>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="div_1">
+                        <a id="a1"></a>
+                        <div class="divtl">大客户介绍</div>
+                        <div class="bk">
+                            <div class="tl">概要</div>
+                            <div class="text nomb">通过与中国，日本的大型供应商合作为零售业提供各种专业高安全性，高性价比，高性能的IT设备，设备如下：
+                                POS机，扫码枪，称重器，无人设备，服务器，网络设备等
+                            </div>
+                        </div>
+                        <a id="a2"></a>
+                        <div class="bk">
+                            <div class="swiper-container" id="parswiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/par_01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_02.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_03.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_04.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_05.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_06.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_07.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_08.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_02.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_03.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_04.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_05.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_06.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_07.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/par_08.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" id="parSP"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rtsidebar">
+                <div class="title">解决方案展示</div>
+                <a href="partner.html" class="md">大客户介绍</a>
+                <a href="partner2.html" class="md actmd">合作伙伴</a>
+                <div class="pageimg">
+                    <img src="images/ser_02.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $(function () {
+
+        var par = creatPar();
+        $(".ser_d .div_1 .bk .table .left .td").click(function () {
+            var ind = $(this).index();
+            $(this).addClass("acttd").siblings().removeClass("acttd");
+            $(".ser_d .div_1 .bk .table .rt .indiv").eq(ind).show().siblings().hide();
+        })
+
+
+        function creatPar() {
+            var val = {
+                pagination: "#parSP",
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                slidesPerColumn: 2,
+                breakpoints:{
+                    768:{
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                        slidesPerColumn: 2
+                    }
+                }
+            }
+            val = assignOBJ(val);
+            return new Swiper("#parswiper", val);
+        }
+    })
+</script>
+
+</html>

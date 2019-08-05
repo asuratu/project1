@@ -1,0 +1,226 @@
+.cont_a .btitle {
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.cont_a .div_1 {
+  padding: 20px 0 50px 0;
+  border-bottom: 1px solid #e5eef6;
+}
+.cont_a .div_1 .divtl {
+  margin-bottom: 50px;
+}
+.cont_a .div_1 .addrbox {
+  margin-bottom: 25px;
+}
+.cont_a .div_1 .addrbox .st {
+  font-size: 18px;
+  color: #333;
+  line-height: 24px;
+}
+.cont_a .div_1 .addrbox .addr {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+.cont_a .div_1 .box1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5eef6;
+}
+.cont_a .div_1 .box2 {
+  padding-top: 50px;
+}
+.cont_a .div_2 {
+  padding: 50px 0 100px 0;
+}
+.cont_a .div_2 .divtl {
+  margin-bottom: 50px;
+}
+.cont_a .div_2 .box1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5eef6;
+}
+.cont_a .div_2 .box1 .btitle {
+  margin-bottom: 30px;
+}
+.cont_a .div_2 .box1 .fllist {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+  margin-bottom: 25px;
+}
+.cont_a .div_2 .box1 .will {
+  font-size: 18px;
+  color: #595656;
+}
+.cont_a .div_2 .box2 .tl .fl {
+  float: left;
+  line-height: 18px;
+  padding: 30px 0;
+}
+.cont_a .div_2 .box2 .tl .fl .t {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+.cont_a .div_2 .box2 .tl .fl .sp {
+  color: #595656;
+  font-size: 16px;
+}
+.cont_a .div_2 .box2 .tl .fl .sa {
+  color: #4c8efe;
+  font-size: 16px;
+  text-decoration: underline;
+  display: inline;
+}
+.cont_a .div_2 .box2 .tl .fl:nth-child(1) {
+  margin-right: 50px;
+}
+.cont_a .div_2 .box2 .joblist .jobli {
+  margin-bottom: 10px;
+}
+.cont_a .div_2 .box2 .joblist .jobli .name {
+  position: relative;
+  overflow: hidden;
+}
+.cont_a .div_2 .box2 .joblist .jobli .name .bg {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: url(../images/cont_03.jpg) no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover;
+  z-index: 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+.cont_a .div_2 .box2 .joblist .jobli .name .before {
+  height: 50px;
+  position: relative;
+  z-index: 10;
+  line-height: 50px;
+  padding: 0 30px 0 25px;
+}
+.cont_a .div_2 .box2 .joblist .jobli .name .before .tl {
+  float: left;
+  font-size: 16px;
+  color: #595656;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+.cont_a .div_2 .box2 .joblist .jobli .name .before .jt {
+  float: right;
+  line-height: 1;
+  margin: 12px 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+.cont_a .div_2 .box2 .joblist .jobli .name::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #d6d6d6;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cont_a .div_2 .box2 .joblist .jobli .nr {
+  background-color: #f4f9fc;
+  padding: 30px 30px 20px 30px;
+  display: none;
+}
+.cont_a .div_2 .box2 .joblist .jobli .nr .yq {
+  margin-bottom: 30px;
+}
+.cont_a .div_2 .box2 .joblist .jobli .nr .yq .tl {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cont_a .div_2 .box2 .joblist .jobli .nr .yq .te {
+  color: #595656;
+  line-height: 24px;
+}
+.cont_a .div_2 .box2 .joblist .jobli:last-child {
+  margin-bottom: 0;
+}
+.cont_a .div_2 .box2 .joblist .jobli:first-child .nr {
+  display: block;
+}
+.cont_a .div_2 .box2 .joblist .actli .name::after,
+.cont_a .div_2 .box2 .joblist .jobli:hover .name::after {
+  display: none;
+}
+.cont_a .div_2 .box2 .joblist .actli .name,
+.cont_a .div_2 .box2 .joblist .jobli:hover .name {
+  cursor: pointer;
+}
+.cont_a .div_2 .box2 .joblist .actli .name .bg,
+.cont_a .div_2 .box2 .joblist .jobli:hover .name .bg {
+  top: 0;
+}
+.cont_a .div_2 .box2 .joblist .actli .name .before .tl,
+.cont_a .div_2 .box2 .joblist .jobli:hover .name .before .tl {
+  color: #ffffff;
+}
+.cont_a .div_2 .box2 .joblist .actli .name .before .jt,
+.cont_a .div_2 .box2 .joblist .jobli:hover .name .before .jt {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .cont_a .btitle {
+    font-size: 16px;
+  }
+  .cont_a .div_1 {
+    padding-bottom: 40px;
+  }
+  .cont_a .div_1 .divtl {
+    margin-bottom: 40px;
+  }
+  .cont_a .div_1 .addrbox .addr {
+    font-size: 14px;
+  }
+  .cont_a .div_1 .addrbox .st {
+    font-size: 16px;
+  }
+  .cont_a .div_1 .addrbox:last-child {
+    margin-bottom: 0;
+  }
+  .cont_a .div_2 {
+    padding: 40px 0 60px;
+  }
+  .cont_a .div_2 .divtl {
+    margin-bottom: 40px;
+  }
+  .cont_a .div_2 .box1 .btitle {
+    margin-bottom: 20px;
+  }
+  .cont_a .div_2 .box1 .fllist {
+    font-size: 14px;
+  }
+  .cont_a .div_2 .box1 .will {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .cont_a .div_2 .box2 .tl .fl {
+    padding: 10px 0;
+  }
+  .cont_a .div_2 .box2 .joblist .jobli .name .before {
+    padding: 0 20px;
+  }
+  .cont_a .div_2 .box2 .joblist .jobli .nr {
+    padding: 20px;
+  }
+}
